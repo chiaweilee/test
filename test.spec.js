@@ -44,6 +44,7 @@ describe("test x-fetch", () => {
 
   it("test fetch deep then", async () => {
     expect.assertions(3);
+    reset();
     await fetch("http://localhost:8000/t");
     expect(result[0]).toBe("peanut butter");
     expect(result[1]).toBe("peanut butter");
